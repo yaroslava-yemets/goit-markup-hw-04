@@ -357,7 +357,6 @@ img {
     display: flex;
     width: 206px;
     height: 44px;
-    background-color: darkgreen;
 }
 
 .network-link {
@@ -374,8 +373,14 @@ img {
     margin-right: 10px;
 }
 
-.network-link:hover {
+.network-link:hover,
+.network-link:focus {
     background-color: var(--accent-color);
+}
+
+.network-link:hover .network-img,
+.network-link:focus .network-img {
+    fill: var(--white-color);
 }
 
 .network-img {
@@ -465,21 +470,25 @@ img {
     background-color: var(--bcg-footer-color);
 }
 
-.footer > .container {
+.bottom {
     display: flex;
     justify-content: baseline;
 }
 
 .footer .logo {
     display: inline-block;
-    margin-bottom: 20px;
 }
 
 .footer-contacts-link:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.address {
+.bottom-contacts {
+    margin-right: 70px;
+}
+
+.address {    
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -500,6 +509,22 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
+}
+
+.networks-list.reverse {
+    margin-top: 20px;
+}
+
+.network-link.reverse {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.reverse .network-img {
+    fill: var(--white-color);
+}
+
+.network-link.reverse:hover {
+    background-color: var(--accent-color);
 }
 
 /* ======PORTFOLIO======= */
@@ -587,18 +612,4 @@ img {
 
 .example-list-item:nth-child(-n + 6) {
     margin-bottom: 30px;
-}
-
-
-.twitter {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-color: cyan;
-}
-
-.twitter-img {
-    width: 20px;
-    height: 20px;
-    color: darkgreen;
 }
