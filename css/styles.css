@@ -368,7 +368,7 @@ img {
 .network-link {
     display: flex;
     justify-content: center;
-    align-content: flex-end;
+    align-content: center;
     width: 100%;
     height: 100%;
     border-radius: 50%;
