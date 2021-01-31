@@ -362,8 +362,6 @@ img {
 
 .network-list-item {
     display: flex;
-    justify-content: center;
-    align-content: center;
     width: 44px;
     height: 44px;
 }
@@ -389,6 +387,8 @@ img {
     fill: var(--clients-links);
     width: 20px;
     height: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 .network-link:hover .network-img,
