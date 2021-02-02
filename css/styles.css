@@ -356,7 +356,6 @@ img {
 
 .networks-list {
     display: flex;
-    width: 206px;
 }
 
 .network-list-item {
